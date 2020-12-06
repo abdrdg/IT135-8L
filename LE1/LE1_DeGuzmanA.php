@@ -100,9 +100,10 @@
     <div class='grid-container result'>
             <div class='grid-y'>
              <div class='medium-6 cell'>";
-
+    
   if($user_name !== '' && $crush_name !== '')
     {
+      echo "<h2>Destiny:</h2>";
       echo "<h1>".ucfirst($user_name)." ♥ ".ucfirst($crush_name)." = $result</h1>";
     }
   else
