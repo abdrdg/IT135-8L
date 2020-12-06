@@ -1,0 +1,64 @@
+ /* Theme Colors:
+    #a7ff83
+    #17b978
+    #086972
+    #071a52 */
+
+header {
+    margin: auto;
+    text-align: center; 
+    padding-bottom: 10%;
+}
+
+body {
+    background: #17b978;
+    font-family: 'Rubik', sans-serif;
+}
+h1 {
+    margin: 0;
+}
+h2 {
+    text-align: left; 
+    font-family: 'Rubik', sans-serif;
+}
+
+main {
+    margin: auto;
+    text-align: center;
+    width: 70%;
+}
+
+form{
+    background-color: #a7ff83;
+    color: #071a52;
+    border-radius: 15px;
+    box-shadow: -10px 10px;
+}
+
+button[type="submit"] {
+    background-color: #17b978;
+    border-radius: 10px;
+}
+
+input[type="text"]{
+    border-radius: 10px;
+}
+
+label {
+    text-align: left;
+    color: #071a52;
+}
+
+p {
+    font-size: 30px;
+    margin: 0;
+}
+
+.result {
+    background-color: #a7ff83;
+    color: #071a52;
+    border-radius: 15px;
+    box-shadow: -10px 10px;
+    margin: 0;
+}
+
