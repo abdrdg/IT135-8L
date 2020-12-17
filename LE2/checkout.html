@@ -6,333 +6,354 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css?v={random number/string}">
 </head>
 <body>
-
-    <header>
-    </header>
-    <main>
-        <div class="grid-container">
-            <form class="grid-y page medium-grid-frame">
-                <div class="cell grid-y medium-2">
-                    <div class="grid-x grid-margin-x cell medium-6">
-                        <div class="medium-6 cell">
-                            <input type="text" name="name" placeholder="Your Name"/>
-                        </div>
-
-                        <div class="medium-6 cell">
-                            <input type="text" name="contact_number" placeholder="Contact Number"/>
-                        </div>
+    <div class="grid-container">
+        <form class="grid-y medium-grid-frame" action="summary.php" method="post">
+            <div class="cell grid-y medium-2 grid-padding-y">
+                <div class="grid-x grid-margin-x cell medium-6">
+                    <div class="medium-6 cell">
+                        <input type="text" name="name" placeholder="Your Name"/>
                     </div>
 
-                    <div class="grid-x grid-margin-x cell">
-                        <input type="text" class="cell auto" name="shipping_address" placeholder="Shipping Address"/>
+                    <div class="medium-6 cell">
+                        <input type="text" name="contact_number" placeholder="Contact Number"/>
                     </div>
                 </div>
-                
-                <div class="cell medium-cell-block-container medium-auto products" >
-                    <ul class="grid-y medium-cell-block-y"> 
-                        <li class="grid-x grid-margin-x cell">
-                            <div class="cell image medium-3">
-                                <img src="./assets/img/products/B_ProductPhoto-min.jpg" alt="butterscotch" class="product_img"/>
-                            </div>
-                            <div class="cell about medium-auto">
-                                <h3>Ground Coffee Butterscotch Flavor (150g)</h3>
-                                <p>Flavored Ground coffee: Butterscotch
-                                    Size: 150g
-                                    Grind: Medium Coarse 
-                                    To taste the greatness of Cafe Bee's coffee, you may use a coffee drip machine, any drip filter, a drip bag, or even tea bags. We also offer drip bags available for only 25 pesos (5pcs).
-                                    We recommend the Coffee-to-Water ratio to be 1:16
-                                    #coffee #coffeebean #groundcoffee #butterscotch #mediumcoarse #coffeeshop #cafebee #cafebeecoffee
-                                </p>
-                            </div>
-                            <div class="cell interaction medium-2 grid-y">
-                                <h3 class="cell medium-auto" >Php 170.00</h3>
-                                <select class="cell medium-shrink" name="quantity">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    </select>
-                                <input class="cell" type="button" value="Add to Cart">
-                            </div>
-                        </li>
-                        
-                        <li class="grid-x grid-margin-x cell">
-                            <div class="cell image medium-3">
-                                <img src="./assets/img/products/BIC_ProductPhoto-min.jpg" alt="BIC" class="product_img"/>
-                            </div>
-                            <div class="cell about medium-auto">
-                                <h3>Ground Coffee Bailey's Irish Cream Flavor (150g)</h3>
-                                <p>Flavored Ground coffee: Bailey's Irish Cream
-                                    Size: 150g
-                                    Grind: Medium Coarse 
-                                    To taste the greatness of Cafe Bee's coffee, you may use a coffee drip machine, any drip filter, a drip bag, or even tea bags. We also offer drip bags available for only 25 pesos (5pcs).
-                                    We recommend the Coffee-to-Water ratio to be 1:16
-                                    #coffee #coffeebean #groundcoffee #baileysirishcream #mediumcoarse #coffeeshop #cafebee #cafebeecoffee
-                                </p>
-                            </div>
-                            <div class="cell interaction medium-2 grid-y">
-                                <h3 class="cell medium-auto" >Php 170.00</h3>
-                                <select class="cell medium-shrink" name="quantity">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    </select>
-                                <input class="cell" type="button" value="Add to Cart">
-                            </div>
-                        </li>
 
-                        <li class="grid-x grid-margin-x cell">
-                            <div class="cell image medium-3">
-                                <img src="./assets/img/products/C&C_ProductPhoto-min.jpg" alt="C&C" class="product_img"/>
-                            </div>
-                            <div class="cell about medium-auto">
-                                <h3>Ground Coffee Cookies and Cream Flavor (150g)</h3>
-                                <p>Flavored Ground coffee: Cookies and Cream
-                                    Size: 150g
-                                    Grind: Medium Coarse 
-                                    To taste the greatness of Cafe Bee's coffee, you may use a coffee drip machine, any drip filter, a drip bag, or even tea bags. We also offer drip bags available for only 25 pesos (5pcs).
-                                    We recommend the Coffee-to-Water ratio to be 1:16
-                                    #coffee #coffeebean #groundcoffee #cookiesandcream #mediumcoarse #coffeeshop #cafebee #cafebeecoffee
-                                </p>
-                            </div>
-                            <div class="cell interaction medium-2 grid-y">
-                                <h3 class="cell medium-auto" >Php 170.00</h3>
-                                <select class="cell medium-shrink" name="quantity">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    </select>
-                                <input class="cell" type="button" value="Add to Cart">
-                            </div>
-                        </li>
-
-                        <li class="grid-x grid-margin-x cell">
-                            <div class="cell image medium-3">
-                                <img src="./assets/img/products/DC_ProductPhoto-min.jpg" alt="Double Chocolate" class="product_img"/>
-                            </div>
-                            <div class="cell about medium-auto">
-                                <h3>Ground Coffee Double Chocolate Flavor (150g)</h3>
-                                <p>Flavored Ground coffee: Double Chocolate
-                                    Size: 150g
-                                    Grind: Medium Coarse 
-                                    To taste the greatness of Cafe Bee's coffee, you may use a coffee drip machine, any drip filter, a drip bag, or even tea bags. We also offer drip bags available for only 25 pesos (5pcs).
-                                    We recommend the Coffee-to-Water ratio to be 1:16
-                                    #coffee #coffeebean #groundcoffee #doublechocolate #mediumcoarse #coffeeshop #cafebee #cafebeecoffee
-                                </p>
-                            </div>
-                            <div class="cell interaction medium-2 grid-y">
-                                <h3 class="cell medium-auto" >Php 170.00</h3>
-                                <select class="cell medium-shrink" name="quantity">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    </select>
-                                <input class="cell" type="button" value="Add to Cart">
-                            </div>
-                        </li>
-
-                        <li class="grid-x grid-margin-x cell">
-                            <div class="cell image medium-3">
-                                <img src="./assets/img/products/H_ProductPhoto-min.jpg" alt="Hazelnut" class="product_img"/>
-                            </div>
-                            <div class="cell about medium-auto">
-                                <h3>Ground Coffee Hazelnut Flavor (150g)</h3>
-                                <p>Flavored Ground coffee: Hazelnut
-                                    Size: 150g
-                                    Grind: Medium Coarse 
-                                    To taste the greatness of Cafe Bee's coffee, you may use a coffee drip machine, any drip filter, a drip bag, or even tea bags. We also offer drip bags available for only 25 pesos (5pcs).
-                                    We recommend the Coffee-to-Water ratio to be 1:16
-                                    #coffee #coffeebean #groundcoffee #hazelnut #mediumcoarse #coffeeshop #cafebee #cafebeecoffee
-                                </p>
-                            </div>
-                            <div class="cell interaction medium-2 grid-y">
-                                <h3 class="cell medium-auto" >Php 170.00</h3>
-                                <select class="cell medium-shrink" name="quantity">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    </select>
-                                <input class="cell" type="button" value="Add to Cart">
-                            </div>
-                        </li>
-
-                        <li class="grid-x grid-margin-x cell">
-                            <div class="cell image medium-3">
-                                <img src="./assets/img/products/M_ProductPhoto-min.jpg" alt="Mocha" class="product_img"/>
-                            </div>
-                            <div class="cell about medium-auto">
-                                <h3>Ground Coffee Mocha Flavor (150g)</h3>
-                                <p>Flavored Ground coffee: Mocha
-                                    Size: 150g
-                                    Grind: Medium Coarse 
-                                    To taste the greatness of Cafe Bee's coffee, you may use a coffee drip machine, any drip filter, a drip bag, or even tea bags. We also offer drip bags available for only 25 pesos (5pcs).
-                                    We recommend the Coffee-to-Water ratio to be 1:16
-                                    #coffee #coffeebean #groundcoffee #mocha #mediumcoarse #coffeeshop #cafebee
-                                </p>
-                            </div>
-                            <div class="cell interaction medium-2 grid-y">
-                                <h3 class="cell medium-auto" >Php 170.00</h3>
-                                <select class="cell medium-shrink" name="quantity">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    </select>
-                                <input class="cell" type="button" value="Add to Cart">
-                            </div>
-                        </li>
-
-                        <li class="grid-x grid-margin-x cell">
-                            <div class="cell image medium-3">
-                                <img src="./assets/img/products/V_ProductPhoto-min.jpg" alt="Vanilla" class="product_img"/>
-                            </div>
-                            <div class="cell about medium-auto">
-                                <h3>Ground Coffee Vanilla Flavor (150g)</h3>
-                                <p>Flavored Ground coffee: Vanilla
-                                    Size: 150g
-                                    Grind: Medium Coarse 
-                                    To taste the greatness of Cafe Bee's coffee, you may use a coffee drip machine, any drip filter, a drip bag, or even tea bags. We also offer drip bags available for only 25 pesos (5pcs).
-                                    We recommend the Coffee-to-Water ratio to be 1:16
-                                    #coffee #coffeebean #groundcoffee #vanilla #mediumcoarse #coffeeshop #cafebee #cafebeecoffee
-                                </p>
-                            </div>
-                            <div class="cell interaction medium-2 grid-y">
-                                <h3 class="cell medium-auto" >Php 170.00</h3>
-                                <select class="cell medium-shrink" name="quantity">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    </select>
-                                <input class="cell" type="button" value="Add to Cart">
-                            </div>
-                        </li>
-
-                        <li class="grid-x grid-margin-x cell">
-                            <div class="cell image medium-3">
-                                <img src="./assets/img/products/Premium Barako.png" alt="Premium Barako" class="product_img"/>
-                            </div>
-                            <div class="cell about medium-auto">
-                                <h3>Ground Coffee Premium Barako (200g)</h3>
-                                <p>Blended Ground coffee: Barako 
-
-                                    Size:
-                                    200g
-                                    
-                                    To taste the greatness of Cafe Bee's coffee, you may use a coffee machine, filter, drip bag, or tea bags. We also offer drip bags which are available for only 25 pesos (5pcs).
-                                </p>
-                            </div>
-                            <div class="cell interaction medium-2 grid-y">
-                                <h3 class="cell medium-auto" >Php 170.00</h3>
-                                <select class="cell medium-shrink" name="quantity">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    </select>
-                                <input class="cell" type="button" value="Add to Cart">
-                            </div>
-                        </li>
-
-                        <li class="grid-x grid-margin-x cell">
-                            <div class="cell image medium-3">
-                                <img src="./assets/img/products/Kalinga Robusta.png" alt="Kalinga Robusta" class="product_img"/>
-                            </div>
-                            <div class="cell about medium-auto">
-                                <h3>Ground Coffee Kalinga Robusta (150g)</h3>
-                                <p>Blended Ground coffee: Kalinga Robusta
-
-                                    Size
-                                    150g
-                                    
-                                    To taste the greatness of Cafe Bee's coffee, you may use a coffee machine, filter, drip bag, or tea bags. We also offer drip bags available for only 25 pesos (5pcs).
-                                </p>
-                            </div>
-                            <div class="cell interaction medium-2 grid-y">
-                                <h3 class="cell medium-auto" >Php 170.00</h3>
-                                <select class="cell medium-shrink" name="quantity">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    </select>
-                                <input class="cell" type="button" value="Add to Cart">
-                            </div>
-                        </li>
-
-                        <li class="grid-x grid-margin-x cell">
-                            <div class="cell image medium-3">
-                                <img src="./assets/img/products/Benguet Blend.png" alt="Benguet Blend" class="product_img"/>
-                            </div>
-                            <div class="cell about medium-auto">
-                                <h3>Blended Ground Coffee Benguet Blend (150g)</h3>
-                                <p>Blended Ground coffee: Benguet Blend
-
-                                    Size
-                                    150g 
-                                    
-                                    To taste the greatness of Cafe Bee's coffee, you may use a coffee machine, filter, drip bag, or tea bags. We also offer drip bags available for only 25 pesos (5pcs).
-                                </p>
-                            </div>
-                            <div class="cell interaction medium-2 grid-y">
-                                <h3 class="cell medium-auto" >Php 170.00</h3>
-                                <select class="cell medium-shrink" name="quantity">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    </select>
-                                <input class="cell" type="button" value="Add to Cart">
-                            </div>
-                        </li>
-                    </ul>
+                <div class="grid-x grid-margin-x cell">
+                    <input type="text" class="cell auto" name="shipping_address" placeholder="Shipping Address"/>
                 </div>
-                <div class="cell medium-3 payment grid-y">
+            </div>
+            <div class="cell medium-cell-block-container medium-auto products" >
+                <ul class="grid-y medium-cell-block-y"> 
+                    <li class="grid-x grid-margin-x cell">
+                        <div class="cell image medium-3">
+                            <img src="./assets/img/products/B_ProductPhoto-min.jpg" alt="butterscotch" class="product_img"/>
+                        </div>
+                        <div class="cell about medium-auto">
+                            <h3>Ground Coffee Butterscotch Flavor (150g)</h3>
+                            <p>Flavored Ground coffee: Butterscotch
+                                Size: 150g
+                                Grind: Medium Coarse 
+                                To taste the greatness of Cafe Bee's coffee, you may use a coffee drip machine, any drip filter, a drip bag, or even tea bags. We also offer drip bags available for only 25 pesos (5pcs).
+                                We recommend the Coffee-to-Water ratio to be 1:16
+                                #coffee #coffeebean #groundcoffee #butterscotch #mediumcoarse #coffeeshop #cafebee #cafebeecoffee
+                            </p>
+                        </div>
+                        <div class="cell interaction medium-2 grid-y">
+                            <h3 class="cell medium-auto" >Php 170.00</h3>
+                            <div class="cell medium-shrink grid-x">
+                                <label for="quantity1" class="cell medium-auto">Quantity: </label>
+                                <select class="cell medium-shrink" name="quantity1">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="grid-x grid-margin-x cell">
+                        <div class="cell image medium-3">
+                            <img src="./assets/img/products/BIC_ProductPhoto-min.jpg" alt="BIC" class="product_img"/>
+                        </div>
+                        <div class="cell about medium-auto">
+                            <h3>Ground Coffee Bailey's Irish Cream Flavor (150g)</h3>
+                            <p>Flavored Ground coffee: Bailey's Irish Cream
+                                Size: 150g
+                                Grind: Medium Coarse 
+                                To taste the greatness of Cafe Bee's coffee, you may use a coffee drip machine, any drip filter, a drip bag, or even tea bags. We also offer drip bags available for only 25 pesos (5pcs).
+                                We recommend the Coffee-to-Water ratio to be 1:16
+                                #coffee #coffeebean #groundcoffee #baileysirishcream #mediumcoarse #coffeeshop #cafebee #cafebeecoffee
+                            </p>
+                        </div>
+                        <div class="cell interaction medium-2 grid-y">
+                            <h3 class="cell medium-auto" >Php 170.00</h3>
+                            <div class="cell medium-shrink grid-x">
+                                <label for="quantity2" class="cell medium-auto">Quantity: </label>
+                                <select class="cell medium-shrink" name="quantity2">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="grid-x grid-margin-x cell">
+                        <div class="cell image medium-3">
+                            <img src="./assets/img/products/C&C_ProductPhoto-min.jpg" alt="C&C" class="product_img"/>
+                        </div>
+                        <div class="cell about medium-auto">
+                            <h3>Ground Coffee Cookies and Cream Flavor (150g)</h3>
+                            <p>Flavored Ground coffee: Cookies and Cream
+                                Size: 150g
+                                Grind: Medium Coarse 
+                                To taste the greatness of Cafe Bee's coffee, you may use a coffee drip machine, any drip filter, a drip bag, or even tea bags. We also offer drip bags available for only 25 pesos (5pcs).
+                                We recommend the Coffee-to-Water ratio to be 1:16
+                                #coffee #coffeebean #groundcoffee #cookiesandcream #mediumcoarse #coffeeshop #cafebee #cafebeecoffee
+                            </p>
+                        </div>
+                        <div class="cell interaction medium-2 grid-y">
+                            <h3 class="cell medium-auto" >Php 170.00</h3>
+                            <div class="cell medium-shrink grid-x">
+                                <label for="quantity3" class="cell medium-auto">Quantity: </label>
+                                <select class="cell medium-shrink" name="quantity3">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="grid-x grid-margin-x cell">
+                        <div class="cell image medium-3">
+                            <img src="./assets/img/products/DC_ProductPhoto-min.jpg" alt="Double Chocolate" class="product_img"/>
+                        </div>
+                        <div class="cell about medium-auto">
+                            <h3>Ground Coffee Double Chocolate Flavor (150g)</h3>
+                            <p>Flavored Ground coffee: Double Chocolate
+                                Size: 150g
+                                Grind: Medium Coarse 
+                                To taste the greatness of Cafe Bee's coffee, you may use a coffee drip machine, any drip filter, a drip bag, or even tea bags. We also offer drip bags available for only 25 pesos (5pcs).
+                                We recommend the Coffee-to-Water ratio to be 1:16
+                                #coffee #coffeebean #groundcoffee #doublechocolate #mediumcoarse #coffeeshop #cafebee #cafebeecoffee
+                            </p>
+                        </div>
+                        <div class="cell interaction medium-2 grid-y">
+                            <h3 class="cell medium-auto" >Php 170.00</h3>
+                            <div class="cell medium-shrink grid-x">
+                                <label for="quantity4" class="cell medium-auto">Quantity: </label>
+                                <select class="cell medium-shrink" name="quantity4">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="grid-x grid-margin-x cell">
+                        <div class="cell image medium-3">
+                            <img src="./assets/img/products/H_ProductPhoto-min.jpg" alt="Hazelnut" class="product_img"/>
+                        </div>
+                        <div class="cell about medium-auto">
+                            <h3>Ground Coffee Hazelnut Flavor (150g)</h3>
+                            <p>Flavored Ground coffee: Hazelnut
+                                Size: 150g
+                                Grind: Medium Coarse 
+                                To taste the greatness of Cafe Bee's coffee, you may use a coffee drip machine, any drip filter, a drip bag, or even tea bags. We also offer drip bags available for only 25 pesos (5pcs).
+                                We recommend the Coffee-to-Water ratio to be 1:16
+                                #coffee #coffeebean #groundcoffee #hazelnut #mediumcoarse #coffeeshop #cafebee #cafebeecoffee
+                            </p>
+                        </div>
+                        <div class="cell interaction medium-2 grid-y">
+                            <h3 class="cell medium-auto" >Php 170.00</h3>
+                            <div class="cell medium-shrink grid-x">
+                                <label for="quantity5" class="cell medium-auto">Quantity: </label>
+                                <select class="cell medium-shrink" name="quantity5">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="grid-x grid-margin-x cell">
+                        <div class="cell image medium-3">
+                            <img src="./assets/img/products/M_ProductPhoto-min.jpg" alt="Mocha" class="product_img"/>
+                        </div>
+                        <div class="cell about medium-auto">
+                            <h3>Ground Coffee Mocha Flavor (150g)</h3>
+                            <p>Flavored Ground coffee: Mocha
+                                Size: 150g
+                                Grind: Medium Coarse 
+                                To taste the greatness of Cafe Bee's coffee, you may use a coffee drip machine, any drip filter, a drip bag, or even tea bags. We also offer drip bags available for only 25 pesos (5pcs).
+                                We recommend the Coffee-to-Water ratio to be 1:16
+                                #coffee #coffeebean #groundcoffee #mocha #mediumcoarse #coffeeshop #cafebee
+                            </p>
+                        </div>
+                        <div class="cell interaction medium-2 grid-y">
+                            <h3 class="cell medium-auto" >Php 170.00</h3>
+                            <div class="cell medium-shrink grid-x">
+                                <label for="quantity6" class="cell medium-auto">Quantity: </label>
+                                <select class="cell medium-shrink" name="quantity6">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="grid-x grid-margin-x cell">
+                        <div class="cell image medium-3">
+                            <img src="./assets/img/products/V_ProductPhoto-min.jpg" alt="Vanilla" class="product_img"/>
+                        </div>
+                        <div class="cell about medium-auto">
+                            <h3>Ground Coffee Vanilla Flavor (150g)</h3>
+                            <p>Flavored Ground coffee: Vanilla
+                                Size: 150g
+                                Grind: Medium Coarse 
+                                To taste the greatness of Cafe Bee's coffee, you may use a coffee drip machine, any drip filter, a drip bag, or even tea bags. We also offer drip bags available for only 25 pesos (5pcs).
+                                We recommend the Coffee-to-Water ratio to be 1:16
+                                #coffee #coffeebean #groundcoffee #vanilla #mediumcoarse #coffeeshop #cafebee #cafebeecoffee
+                            </p>
+                        </div>
+                        <div class="cell interaction medium-2 grid-y">
+                            <h3 class="cell medium-auto" >Php 170.00</h3>
+                            <div class="cell medium-shrink grid-x">
+                                <label for="quantity7" class="cell medium-auto">Quantity: </label>
+                                <select class="cell medium-shrink" name="quantity7">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="grid-x grid-margin-x cell">
+                        <div class="cell image medium-3">
+                            <img src="./assets/img/products/Premium Barako.png" alt="Premium Barako" class="product_img"/>
+                        </div>
+                        <div class="cell about medium-auto">
+                            <h3>Ground Coffee Premium Barako (200g)</h3>
+                            <p>Blended Ground coffee: Barako 
+
+                                Size:
+                                200g
+                                
+                                To taste the greatness of Cafe Bee's coffee, you may use a coffee machine, filter, drip bag, or tea bags. We also offer drip bags which are available for only 25 pesos (5pcs).
+                            </p>
+                        </div>
+                        <div class="cell interaction medium-2 grid-y">
+                            <h3 class="cell medium-auto" >Php 170.00</h3>
+                            <div class="cell medium-shrink grid-x">
+                                <label for="quantity8" class="cell medium-auto">Quantity: </label>
+                                <select class="cell medium-shrink" name="quantity8">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="grid-x grid-margin-x cell">
+                        <div class="cell image medium-3">
+                            <img src="./assets/img/products/Kalinga Robusta.png" alt="Kalinga Robusta" class="product_img"/>
+                        </div>
+                        <div class="cell about medium-auto">
+                            <h3>Ground Coffee Kalinga Robusta (150g)</h3>
+                            <p>Blended Ground coffee: Kalinga Robusta
+
+                                Size
+                                150g
+                                
+                                To taste the greatness of Cafe Bee's coffee, you may use a coffee machine, filter, drip bag, or tea bags. We also offer drip bags available for only 25 pesos (5pcs).
+                            </p>
+                        </div>
+                        <div class="cell interaction medium-2 grid-y">
+                            <h3 class="cell medium-auto" >Php 170.00</h3>
+                            <div class="cell medium-shrink grid-x">
+                                <label for="quantity9" class="cell medium-auto">Quantity: </label>
+                                <select class="cell medium-shrink" name="quantity9">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="grid-x grid-margin-x cell">
+                        <div class="cell image medium-3">
+                            <img src="./assets/img/products/Benguet Blend.png" alt="Benguet Blend" class="product_img"/>
+                        </div>
+                        <div class="cell about medium-auto">
+                            <h3>Blended Ground Coffee Benguet Blend (150g)</h3>
+                            <p>Blended Ground coffee: Benguet Blend
+
+                                Size
+                                150g 
+                                
+                                To taste the greatness of Cafe Bee's coffee, you may use a coffee machine, filter, drip bag, or tea bags. We also offer drip bags available for only 25 pesos (5pcs).
+                            </p>
+                        </div>
+                        <div class="cell interaction medium-2 grid-y">
+                            <h3 class="cell medium-auto" >Php 170.00</h3>
+                            <div class="cell medium-shrink grid-x">
+                                <label for="quantity10" class="cell medium-auto">Quantity: </label>
+                                <select class="cell medium-shrink" name="quantity10">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="cell medium-2 payment grid-y grid-margin-y">
+                <div class="cell medium-8 grid-x grid-margin-x">
                     <div class="cell medium-shrink grid-x">
-                        
+                        <label class="cell medium-shrink"><b>Discount Privileges</b></label>
+                        <select name="disc_priv" class="cell medium-auto" >
+                            <option value="None">None</option>
+                            <option value="PWD">PWD</option>
+                            <option value="Senior">Senior</option>
+                            <option value="Student">Student</option>
+                        </select>
                     </div>
-                    <div class="cell medium-shrink grid-x grid-margin-x">
-                        <div class="cell medium-shrink grid-x">
-                            <label class="cell medium-shrink"><b>Discount Privileges</b></label>
-                            <select name="disc_priv" class="cell medium-auto" >
-                                <option value="None">None</option>
-                                <option value="PWD">PWD</option>
-                                <option value="Senior">Senior</option>
-                                <option value="Student">Student</option>
-                            </select>
-                        </div>
 
-                        <div class="cell medium-grow grid-x">
-                                <label><b>Payment Method: </b></label>
-                                <div class="cell small-auto medium-shrink">
-                                    <input type="radio" name="card" id="visa" >
-                                    <label for="visa">Visa</label>
-                                </div>
-                                <div class="cell small-auto medium-shrink">
-                                    <input type="radio" name="card" id="mastercard">
-                                    <label for="mastercard">Mastercard</label>
-                                </div>
-                                <div class="cell small-auto medium-shrink">
-                                    <input type="radio" name="card" id="gcash">
-                                    <label for="gcash">GCash</label>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="cell medium-grow grid-x">
-                        <h3 class="price cell medium-auto">PHP 00000.00</h3>
-                        <input type="submit" value="Checkout" class="cell medium-shrink">
+                    <div class="cell medium-shrink grid-x">
+                            <label><b>Payment Method: </b></label>
+                            <div class="cell small-auto medium-shrink">
+                                <input type="radio" name="card" id="visa" >
+                                <label for="visa">Visa</label>
+                            </div>
+                            <div class="cell small-auto medium-shrink">
+                                <input type="radio" name="card" id="mastercard">
+                                <label for="mastercard">Mastercard</label>
+                            </div>
+                            <div class="cell small-auto medium-shrink">
+                                <input type="radio" name="card" id="gcash">
+                                <label for="gcash">GCash</label>
+                            </div>
                     </div>
                 </div>
-            </form>
-        </div>
-    </main>
-    
+                <div class="cell medium-4 grid-x">
+                    <div class="cell medium-4"></div>
+                    <input type="submit" value="Checkout" class="cell medium-auto">
+                    <div class="cell medium-4"></div>
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
