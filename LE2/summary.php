@@ -198,8 +198,8 @@ if(CheckEmptyQuantity($user))
             <tr>
                 <th></th>
                 <th></th>
-                <th style="text-align:right">TOTAL:</th>
-                <th style="text-align:left">Php <?php echo $user->GetTotalAmountDue();?></th>
+                <th style="text-align:right">TOTAL DUE:</th>
+                <th style="text-align:left; text-decoration:underline;">Php <?php echo $user->GetTotalAmountDue();?></th>
             </tr>
             <tr>
                 <th></th>
