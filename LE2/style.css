@@ -74,3 +74,7 @@ p {
     padding: 20px;
 }
 
+table {
+    border-radius: 10px;
+    background-color: #FBAF1D;
+}

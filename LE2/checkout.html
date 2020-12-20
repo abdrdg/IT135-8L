@@ -11,19 +11,19 @@
 <body>
     <div class="grid-container">
         <form class="grid-y medium-grid-frame" action="summary.php" method="post">
-            <div class="cell grid-y medium-2 grid-padding-y">
+            <div class="cell grid-y medium-2 grid-padding-y user-information-wrapper">
                 <div class="grid-x grid-margin-x cell medium-6">
                     <div class="medium-6 cell">
-                        <input type="text" name="name" placeholder="Your Name"/>
+                        <input type="text" name="name" placeholder="Your Name" required/>
                     </div>
 
                     <div class="medium-6 cell">
-                        <input type="text" name="contact_number" placeholder="Contact Number"/>
+                        <input type="text" name="contact_number" placeholder="Contact Number" required/>
                     </div>
                 </div>
 
                 <div class="grid-x grid-margin-x cell">
-                    <input type="text" class="cell auto" name="shipping_address" placeholder="Shipping Address"/>
+                    <input type="text" class="cell auto" name="shipping_address" placeholder="Shipping Address" required/>
                 </div>
             </div>
             <div class="cell medium-cell-block-container medium-auto products" >
@@ -274,16 +274,16 @@
                     <div class="cell medium-shrink grid-x">
                             <label><b>Payment Method: </b></label>
                             <div class="cell small-auto medium-shrink">
-                                <input type="radio" name="payment_method" id="visa" value="visa">
-                                <label for="visa">Visa</label>
+                                <input type="radio" name="payment_method" id="Visa" value="Visa">
+                                <label for="Visa">Visa</label>
                             </div>
                             <div class="cell small-auto medium-shrink">
-                                <input type="radio" name="payment_method" id="mastercard" value="mastercard">
-                                <label for="mastercard">Mastercard</label>
+                                <input type="radio" name="payment_method" id="Mastercard" value="Mastercard">
+                                <label for="Mastercard">Mastercard</label>
                             </div>
                             <div class="cell small-auto medium-shrink">
-                                <input type="radio" name="payment_method" id="gcash" value="gcash">
-                                <label for="gcash">GCash</label>
+                                <input type="radio" name="payment_method" id="GCash" value="GCash" checked="checked">
+                                <label for="GCash">GCash</label>
                             </div>
                     </div>
                 </div>
