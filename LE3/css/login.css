@@ -1,0 +1,34 @@
+body {
+    background-color: #0D1440;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+form {
+    margin: 10% 30% 0% 30%;
+}
+
+input[type="submit"] {
+    background-color: #BF1736;
+    color: white;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: white;
+}
+
+h1 {
+    margin: 10%;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 5.5vw;
+}
+
+a:hover {
+    color: #BF1736;
+}
+
+hr {
+    color: white;
+    border-style: solid;
+    border-color: white;
+}
