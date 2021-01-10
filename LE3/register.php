@@ -4,20 +4,20 @@
     </head>      
     <body>
         <center>
-    <h2>Registration Page</h2>
-    <form action="register.php" method="POST">
-    <table>
-        <tr>
-            <td>Enter Username:
-            <td><input type="text" name="username" required="required" />
-        </tr>
-        <tr>
-            <td>Enter Password:
-            <td><input type="password" name="password" required="required" />
-        </tr>
-    </table><br>
-    <input type="submit" value="Register"/><br/><br/>
-        <a href="login.php">Have an Account? Login Here!</a>
+            <h2>Registration Page</h2>
+            <form action="register.php" method="POST">
+            <table>
+                <tr>
+                    <td>Enter Username:
+                    <td><input type="text" name="username" required="required" />
+                </tr>
+                <tr>
+                    <td>Enter Password:
+                    <td><input type="password" name="password" required="required" />
+                </tr>
+            </table><br>
+            <input type="submit" value="Register"/><br/><br/>
+            <a href="login.php">Have an Account? Login Here!</a>
         </center>      
     </body>
 </html>
