@@ -1,6 +1,10 @@
 <html> 
     <head>  
         <title>My Food Delivery Store</title> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/home.css?v=<?php echo time(); ?>">
     </head> 
     
     <?php 
@@ -8,22 +12,23 @@
         if($_SESSION['user']){}//checks if user is logged in
         else
         {  
-            header("location:index.php"); // redirects if user is not logged in 
+            header("location:login.php"); // redirects if user is not logged in 
         }  
         $user = $_SESSION['user']; //assigns user value  
     ?> 
     
     <body>  
-        <h2>Home Page</h2>  
-        <p>Hello <?php Print "$user"?>!</p> <!--Displays user's name-->   
-        <a href="logout.php">Click here to logout</a><br/><br/>  
-        <form action="add.php" method="POST">     
-            Add more to list: <br/>    
-            Details: <input type="text" name="details"/><br/>    
-            Public Post? <input type="checkbox" name="public[]" value="yes"/><br/>    
-            <input type="submit" value="Add to list"/>  
-        </form>  
-        <h2 align="center">My list</h2>
+        <div class="grid-container">
+            <h2>Home Page</h2>  
+            <p>Hello <?php Print "$user"?>!</p> <!--Displays user's name-->   
+            <a href="logout.php">Click here to logout</a>
+            <form action="add.php" method="POST">     
+                Add more to list: <br/>    
+                Details: <input type="text" name="details"/>
+                Public Post? <input type="checkbox" name="public[]" value="yes"/><br/>    
+                <input type="submit" value="Add to list"/>  
+            </form>  
+        <h2 align="center">My List</h2>
         <table border="1px" width="100%">
             <tr>      
                 <th>Id</th>      

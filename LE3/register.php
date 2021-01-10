@@ -1,24 +1,27 @@
 <html>      
     <head>
-    <title>My Online Store</title>      
+    <title>My Online Store</title>  
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/register.css?v=<?php echo time(); ?>">
     </head>      
     <body>
-        <center>
-            <h2>Registration Page</h2>
-            <form action="register.php" method="POST">
-            <table>
-                <tr>
-                    <td>Enter Username:
-                    <td><input type="text" name="username" required="required" />
-                </tr>
-                <tr>
-                    <td>Enter Password:
-                    <td><input type="password" name="password" required="required" />
-                </tr>
-            </table><br>
-            <input type="submit" value="Register"/><br/><br/>
-            <a href="login.php">Have an Account? Login Here!</a>
-        </center>      
+        <form action="register.php" method="POST">
+        <h2>Registration Page</h2>
+        <table>
+            <tr>
+                <td>Enter Username:
+                <td><input type="text" name="username" required="required" />
+            </tr>
+            <tr>
+                <td>Enter Password:
+                <td><input type="password" name="password" required="required" />
+            </tr>
+        </table><br>
+        <input type="submit" value="Register"/><br/><br/>
+        <a href="login.php">Have an Account? Login Here!</a>
     </body>
 </html>
 
